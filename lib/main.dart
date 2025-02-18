@@ -5,6 +5,7 @@ import 'package:aplicacion_sem2/injection.dart';
 import 'package:aplicacion_sem2/presentation/bloc/task_bloc.dart';
 import 'package:aplicacion_sem2/presentation/bloc/task_event.dart';
 import 'package:aplicacion_sem2/presentation/pages/task_list_page.dart';
+import 'package:aplicacion_sem2/presentation/pages/task_builder.dart';
 
 void main() {
   initializeDependencies();
@@ -23,10 +24,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         useMaterial3: false,
       ),
-      home: BlocProvider(
-        create: (context) => getIt<TaskBloc>()..add(LoadTasks()),
-        child: const ProductListPage(),
-      ),
+      //home: BlocProvider(
+      //  create: (context) => getIt<TaskBloc>()..add(LoadTasks()),
+      //  child: const TaskListPage(),
+      //),
+      home:TaskScreen(),
     );
   }
 }

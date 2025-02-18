@@ -13,3 +13,14 @@ class DeleteTaskEvent extends TaskEvent {
   final String id;
   DeleteTaskEvent(this.id);
 }
+
+class UpdateTaskEvent extends TaskEvent {
+  final Task task;
+  UpdateTaskEvent(this.task);
+}
+
+class UpdateTask extends TaskEvent {
+  final Task task;
+
+  UpdateTask(this.task);
+}

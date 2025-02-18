@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:uuid/uuid.dart';
 
-class ProductListPage extends StatelessWidget {
-  const ProductListPage({super.key});
+class TaskListPage extends StatelessWidget {
+  const TaskListPage({super.key});
 
   @override
   Widget build(BuildContext context) {
